@@ -52,30 +52,60 @@
 
 <!-- CONTENITORE -->
 <div id="app" class="container-full">
-    <div class="row row-cols-1 d-none d-md-block">
-
+    <div class="row row-cols-1">
         <!-- SIDEBAR -->
         <!-- NAV SIDEBAR -->
-        <div class="sidebar col-3 bg-dark">
-            <div class="col">
-                <nav id="navbar-example3" class="h-100 bg-dark flex-column align-items-stretch pe-4 border-top">
+        <div class="sidebar col-md-4 col-lg-3 bg-dark d-none d-md-block">
+            <div class="p-3 pb-5">
+                <div class="content logo text-white border-bottom">
+                    <h3 class="fw-light p-1 pb-3">Boostrap Dashbord</h3>
+                </div>
+                <nav id="navbar-example3" class="h-100 bg-dark flex-column align-items-stretch border-0">
                     <nav class="nav nav-pills flex-column">
-                        <a class="nav-link text-white" href="#dashboard">Dashboard</a>                       
+                        <a class="nav-link text-white mt-3" href="#dashboard">Dashboard</a>                       
                         <a class="nav-link text-white" href="./sponsorship.html">Sponsorizzazione</a>
-                        <a class="nav-link text-white" href="./products.html">Prodotti</a>
+                        <a class="nav-link text-white active" href="./products.html">Prodotti</a>
                         <a class="nav-link text-white" href="./new-product.html">Nuovo Prodotto</a>
-                        <a class="nav-link text-white" href="#clienti">Clienti</a>
-                    
+                        <a class="nav-link text-white mb-5" href="#clienti">Clienti</a>                    
                     </nav>
                 </nav>
-            </div>
+                <div class="d-flex align-item-center">
+                    <!-- IMMAGINE USER -->
+                <div class="w-25 h-25 rounded-circle overflow-hidden me-2 flex-grow-0">
+                    <img src="https://picsum.photos/id/237/100/100" alt="user" class="img-fluid">
+                </div>
+                <!-- /IMMAGINE USER -->                
+                <!-- DROPDOWN -->
+                <div class="btn-group">
+                    <button class="btn btn-dark btn-sm dropdown-toggle fw-semibold" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Mario Bianchi
+                    </button>
+                    <ul class="dropdown-menu bg-dark border border-light-subtle">
+                        <li class="text-white p-2 px-3 ">Impostazione</li>
+                        <li class="text-white p-2 px-3 ">Profilo</li>
+                        <li class="text-white p-2 px-3 border-top border-light-subtle">Esci</li>
+                    </ul>
+                </div>
+                <!-- /DROPDOWN -->
+                </div>
+            </div>         
         </div>
         <!-- /NAV SIDEBAR -->
         <!-- /SIDEBAR -->
-
-
         <!-- CONTENT -->
-        <div class="content col col-md-9">
+        <div class="col col-md-8 col-lg-9">
+            <div class="content">
+                <div class="product p-3 d-flex align-item-center justify-content-between">
+                    <h2 class="">10 prodotti trovati</h2>
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                        <button type="button" class="btn btn-outline-primary"><a href="#">Esporta</a></button>
+                        <button type="button" class="btn btn-outline-primary"><a href="./new-product.html">Nuovo</a></button>
+                        
+                      </div>
+                </div>
+
+
+            </div>
             
         <!-- /CONTENT -->
 

@@ -10,11 +10,89 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- FONT AWESOME -->
     <title>Bootstrap Dashboard</title>
-    <H1>CIAO MONDO!</H1>
 </head>
 <body>
+    <header class="bg-dark d-md-none">
+        <!-- NAVBAR -->
+        <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bootstrap Dashboard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#dashboard">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./sponsorship.html">Sponsorizzazione</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./products.html">Prodotti</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./new-product.html">Nuovo Prodotto</a>
+                </li>
+                <li class="nav-item mt-4">
+                    <a class="nav-link" href="#">Impostazione</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profilo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Esci</a>
+                </li>              
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <!-- /NAVBAR -->
+    </header>
+
+<!-- CONTENITORE -->
+<div id="app" class="container-full">
+    <div class="row row-cols-1 d-none d-md-block">
+
+        <!-- SIDEBAR -->
+        <!-- NAV SIDEBAR -->
+        <div class="sidebar col-3 bg-dark">
+            <div class="col">
+                <nav id="navbar-example3" class="h-100 bg-dark flex-column align-items-stretch pe-4 border-top">
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link text-white" href="#dashboard">Dashboard</a>                       
+                        <a class="nav-link text-white" href="./sponsorship.html">Sponsorizzazione</a>
+                        <a class="nav-link text-white" href="./products.html">Prodotti</a>
+                        <a class="nav-link text-white" href="./new-product.html">Nuovo Prodotto</a>
+                        <a class="nav-link text-white" href="#clienti">Clienti</a>
+                    
+                    </nav>
+                </nav>
+            </div>
+        </div>
+        <!-- /NAV SIDEBAR -->
+        <!-- /SIDEBAR -->
 
 
+        <!-- CONTENT -->
+        <div class="content col col-md-9">
+            
+        <!-- /CONTENT -->
+
+        </div>
+    </div>
+
+
+    
+
+
+
+
+
+
+
+
+</div>
 
 
 

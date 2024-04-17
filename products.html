@@ -12,7 +12,7 @@
     <title>Bootstrap Dashboard</title>
 </head>
 <body>
-    <header class="bg-dark d-md-none">
+    <header class="container-full bg-dark d-md-none shadow">
         <!-- NAVBAR -->
         <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
             <div class="container-fluid">
@@ -52,10 +52,10 @@
 
 <!-- CONTENITORE -->
 <div id="app" class="container-full">
-    <div class="row row-cols-1">
+    <div class="d-flex row-cols-1 row-cols-md-2">
         <!-- SIDEBAR -->
         <!-- NAV SIDEBAR -->
-        <div class="sidebar col-md-4 col-lg-3 bg-dark d-none d-md-block">
+        <div class="sidebar col-md-3 col-lg-3 bg-dark d-none d-md-block">
             <div class="p-3 pb-5">
                 <div class="content logo text-white border-bottom">
                     <h3 class="fw-light p-1 pb-3">Boostrap Dashbord</h3>
@@ -93,16 +93,208 @@
         <!-- /NAV SIDEBAR -->
         <!-- /SIDEBAR -->
         <!-- CONTENT -->
-        <div class="col col-md-8 col-lg-9">
-            <div class="content">
-                <div class="product p-3 d-flex align-item-center justify-content-between">
+        <div class="col col-md-9 col-lg-9">
+            <div class="content p-2">                
+                <div class="header p-3 d-flex align-item-center justify-content-between border-bottom">
                     <h2 class="">10 prodotti trovati</h2>
                     <div class="btn-group" role="group" aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-outline-primary"><a href="#">Esporta</a></button>
-                        <button type="button" class="btn btn-outline-primary"><a href="./new-product.html">Nuovo</a></button>
-                        
-                      </div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><a class="text-decoration-none text-body-tertiary" href="#">Esporta</a></button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><a class="text-decoration-none text-body-tertiary" href="./new-product.html">Nuovo</a></button>                        
+                    </div>
+                </div>  
+                <div class="products-list">
+                    <ul class="mt-3">
+                        <!-- ROW • INTESTAZIONE LISTA -->
+                        <li class="row row-cols-2 row-cols-sm-3 row-cols-md-4">
+                            <div class="name fw-semibold col-9 col-sm-8 col-md-6">Nome</div>
+                            <div class="price fw-semibold d-none d-sm-block col-sm-2 col-md-2 text-center">Prezzo</div>
+                            <div class="state fw-semibold d-none d-md-block col-md-2 text-center">Stato</div>
+                            <div class="actions fw-semibold col-3 col-sm-2 col-md-2 text-center">Azione</div>
+                        </li>
+                        <!-- /ROW • INTESTAZIONE LISTA -->
+                        <!-- ROW • LISTA -->
+                        <li class="row row-cols-2 row-cols-sm-3 row-cols-md-4 mt-3 border-top py-2">
+                            <div class="name d-flex col-9 col-sm-8 col-md-6">
+                                <img src="https://picsum.photos/id/237/50/50" alt="foto" class="img-fluid">
+                                <p class="ms-3">MacBook Pro 16" M3 Max 64G 1T</p>
+                            </div>
+                            <div class="price d-none d-sm-block col-sm-2 col-md-2 text-center align-self-center">
+                                <p>5.179 &euro;</p>
+                            </div>
+                            <div class="state fw-semibold d-none d-md-block col-md-2 text-center align-self-center">
+                                <button type="button" class="btn btn-sm btn-outline-success rounded-circle"><i class="fas fa-check"></i></button>
+                            </div>
+                            <div class="actions fw-semibold col-3 col-sm-2 col-md-2 text-center align-self-center">
+                                <button type="button" class="btn btn-sm btn-outline-primary"><i class="fas fa-pencil"></i></button>
+                                <button type="button" class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                            </div>
+                        </li>
+                        <!-- /ROW • LISTA -->
+                        <!-- ROW • LISTA -->
+                        <li class="row row-cols-2 row-cols-sm-3 row-cols-md-4 border-top py-2">
+                            <div class="name d-flex col-9 col-sm-8 col-md-6">
+                                <img src="https://picsum.photos/id/237/50/50" alt="foto" class="img-fluid">
+                                <p class="ms-3">MacBook Pro 16" M3 Max 64G 1T</p>
+                            </div>
+                            <div class="price d-none d-sm-block col-sm-2 col-md-2 text-center align-self-center">
+                                <p>5.179 &euro;</p>
+                            </div>
+                            <div class="state fw-semibold d-none d-md-block col-md-2 text-center align-self-center">
+                                <button type="button" class="btn btn-sm btn-outline-success rounded-circle"><i class="fas fa-check"></i></button>
+                            </div>
+                            <div class="actions fw-semibold col-3 col-sm-2 col-md-2 text-center align-self-center">
+                                <button type="button" class="btn btn-sm btn-outline-primary"><i class="fas fa-pencil"></i></button>
+                                <button type="button" class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                            </div>
+                        </li>
+                        <!-- /ROW • LISTA -->
+                        <!-- ROW • LISTA -->
+                        <li class="row row-cols-2 row-cols-sm-3 row-cols-md-4 border-top py-2">
+                            <div class="name d-flex col-9 col-sm-8 col-md-6">
+                                <img src="https://picsum.photos/id/237/50/50" alt="foto" class="img-fluid">
+                                <p class="ms-3">MacBook Pro 16" M3 Max 64G 1T</p>
+                            </div>
+                            <div class="price d-none d-sm-block col-sm-2 col-md-2 text-center align-self-center">
+                                <p>5.179 &euro;</p>
+                            </div>
+                            <div class="state fw-semibold d-none d-md-block col-md-2 text-center align-self-center">
+                                <button type="button" class="btn btn-sm btn-outline-danger rounded-circle"><i class="fas fa-xmark"></i></button>
+                            </div>
+                            <div class="actions fw-semibold col-3 col-sm-2 col-md-2 text-center align-self-center">
+                                <button type="button" class="btn btn-sm btn-outline-primary"><i class="fas fa-pencil"></i></button>
+                                <button type="button" class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                            </div>
+                        </li>
+                        <!-- /ROW • LISTA -->
+                        <!-- ROW • LISTA -->
+                        <li class="row row-cols-2 row-cols-sm-3 row-cols-md-4 border-top py-2">
+                            <div class="name d-flex col-9 col-sm-8 col-md-6">
+                                <img src="https://picsum.photos/id/237/50/50" alt="foto" class="img-fluid">
+                                <p class="ms-3">MacBook Pro 16" M3 Max 64G 1T</p>
+                            </div>
+                            <div class="price d-none d-sm-block col-sm-2 col-md-2 text-center align-self-center">
+                                <p>5.179 &euro;</p>
+                            </div>
+                            <div class="state fw-semibold d-none d-md-block col-md-2 text-center align-self-center">
+                                <button type="button" class="btn btn-sm btn-outline-success rounded-circle"><i class="fas fa-check"></i></button>
+                            </div>
+                            <div class="actions fw-semibold col-3 col-sm-2 col-md-2 text-center align-self-center">
+                                <button type="button" class="btn btn-sm btn-outline-primary"><i class="fas fa-pencil"></i></button>
+                                <button type="button" class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                            </div>
+                        </li>
+                        <!-- /ROW • LISTA -->
+                        <!-- ROW • LISTA -->
+                        <li class="row row-cols-2 row-cols-sm-3 row-cols-md-4 border-top py-2">
+                            <div class="name d-flex col-9 col-sm-8 col-md-6">
+                                <img src="https://picsum.photos/id/237/50/50" alt="foto" class="img-fluid">
+                                <p class="ms-3">MacBook Pro 16" M3 Max 64G 1T</p>
+                            </div>
+                            <div class="price d-none d-sm-block col-sm-2 col-md-2 text-center align-self-center">
+                                <p>5.179 &euro;</p>
+                            </div>
+                            <div class="state fw-semibold d-none d-md-block col-md-2 text-center align-self-center">
+                                <button type="button" class="btn btn-sm btn-outline-success rounded-circle"><i class="fas fa-check"></i></button>
+                            </div>
+                            <div class="actions fw-semibold col-3 col-sm-2 col-md-2 text-center align-self-center">
+                                <button type="button" class="btn btn-sm btn-outline-primary"><i class="fas fa-pencil"></i></button>
+                                <button type="button" class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                            </div>
+                        </li>
+                        <!-- /ROW • LISTA -->
+                        <!-- ROW • LISTA -->
+                        <li class="row row-cols-2 row-cols-sm-3 row-cols-md-4 border-top py-2">
+                            <div class="name d-flex col-9 col-sm-8 col-md-6">
+                                <img src="https://picsum.photos/id/237/50/50" alt="foto" class="img-fluid">
+                                <p class="ms-3">MacBook Pro 16" M3 Max 64G 1T</p>
+                            </div>
+                            <div class="price d-none d-sm-block col-sm-2 col-md-2 text-center align-self-center">
+                                <p>5.179 &euro;</p>
+                            </div>
+                            <div class="state fw-semibold d-none d-md-block col-md-2 text-center align-self-center">
+                                <button type="button" class="btn btn-sm btn-outline-danger rounded-circle"><i class="fas fa-xmark"></i></button>
+                            </div>
+                            <div class="actions fw-semibold col-3 col-sm-2 col-md-2 text-center align-self-center">
+                                <button type="button" class="btn btn-sm btn-outline-primary"><i class="fas fa-pencil"></i></button>
+                                <button type="button" class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                            </div>
+                        </li>
+                        <!-- /ROW • LISTA -->
+                        <!-- ROW • LISTA -->
+                        <li class="row row-cols-2 row-cols-sm-3 row-cols-md-4 border-top py-2">
+                            <div class="name d-flex col-9 col-sm-8 col-md-6">
+                                <img src="https://picsum.photos/id/237/50/50" alt="foto" class="img-fluid">
+                                <p class="ms-3">MacBook Pro 16" M3 Max 64G 1T</p>
+                            </div>
+                            <div class="price d-none d-sm-block col-sm-2 col-md-2 text-center align-self-center">
+                                <p>5.179 &euro;</p>
+                            </div>
+                            <div class="state fw-semibold d-none d-md-block col-md-2 text-center align-self-center">
+                                <button type="button" class="btn btn-sm btn-outline-success rounded-circle"><i class="fas fa-check"></i></button>
+                            </div>
+                            <div class="actions fw-semibold col-3 col-sm-2 col-md-2 text-center align-self-center">
+                                <button type="button" class="btn btn-sm btn-outline-primary"><i class="fas fa-pencil"></i></button>
+                                <button type="button" class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                            </div>
+                        </li>
+                        <!-- /ROW • LISTA -->
+                        <!-- ROW • LISTA -->
+                        <li class="row row-cols-2 row-cols-sm-3 row-cols-md-4 border-top py-2">
+                            <div class="name d-flex col-9 col-sm-8 col-md-6">
+                                <img src="https://picsum.photos/id/237/50/50" alt="foto" class="img-fluid">
+                                <p class="ms-3">MacBook Pro 16" M3 Max 64G 1T</p>
+                            </div>
+                            <div class="price d-none d-sm-block col-sm-2 col-md-2 text-center align-self-center">
+                                <p>5.179 &euro;</p>
+                            </div>
+                            <div class="state fw-semibold d-none d-md-block col-md-2 text-center align-self-center">
+                                <button type="button" class="btn btn-sm btn-outline-success rounded-circle"><i class="fas fa-check"></i></button>
+                            </div>
+                            <div class="actions fw-semibold col-3 col-sm-2 col-md-2 text-center align-self-center">
+                                <button type="button" class="btn btn-sm btn-outline-primary"><i class="fas fa-pencil"></i></button>
+                                <button type="button" class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                            </div>
+                        </li>
+                        <!-- /ROW • LISTA -->
+                        <!-- ROW • LISTA -->
+                        <li class="row row-cols-2 row-cols-sm-3 row-cols-md-4 border-top py-2">
+                            <div class="name d-flex col-9 col-sm-8 col-md-6">
+                                <img src="https://picsum.photos/id/237/50/50" alt="foto" class="img-fluid">
+                                <p class="ms-3">MacBook Pro 16" M3 Max 64G 1T</p>
+                            </div>
+                            <div class="price d-none d-sm-block col-sm-2 col-md-2 text-center align-self-center">
+                                <p>5.179 &euro;</p>
+                            </div>
+                            <div class="state fw-semibold d-none d-md-block col-md-2 text-center align-self-center">
+                                <button type="button" class="btn btn-sm btn-outline-danger rounded-circle"><i class="fas fa-xmark"></i></button>
+                            </div>
+                            <div class="actions fw-semibold col-3 col-sm-2 col-md-2 text-center align-self-center">
+                                <button type="button" class="btn btn-sm btn-outline-primary"><i class="fas fa-pencil"></i></button>
+                                <button type="button" class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                            </div>
+                        </li>
+                        <!-- /ROW • LISTA -->
+                        <!-- ROW • LISTA -->
+                        <li class="row row-cols-2 row-cols-sm-3 row-cols-md-4 border-top py-2">
+                            <div class="name d-flex col-9 col-sm-8 col-md-6">
+                                <img src="https://picsum.photos/id/237/50/50" alt="foto" class="img-fluid">
+                                <p class="ms-3">MacBook Pro 16" M3 Max 64G 1T</p>
+                            </div>
+                            <div class="price d-none d-sm-block col-sm-2 col-md-2 text-center align-self-center">
+                                <p>5.179 &euro;</p>
+                            </div>
+                            <div class="state fw-semibold d-none d-md-block col-md-2 text-center align-self-center">
+                                <button type="button" class="btn btn-sm btn-outline-success rounded-circle"><i class="fas fa-check"></i></button>
+                            </div>
+                            <div class="actions fw-semibold col-3 col-sm-2 col-md-2 text-center align-self-center">
+                                <button type="button" class="btn btn-sm btn-outline-primary"><i class="fas fa-pencil"></i></button>
+                                <button type="button" class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                            </div>
+                        </li>
+                        <!-- /ROW • LISTA -->
+                    </ul>
                 </div>
+                
 
 
             </div>

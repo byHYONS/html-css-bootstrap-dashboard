@@ -9,21 +9,21 @@
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- FONT AWESOME -->
-    <title>Nuovi Prodotti</title>
+    <title>Sponsorizzazione</title>
 </head>
 <body>
-    <header class="container-full bg-dark d-md-none shadow">
+    <header class="container-full bg-dark d-md-none shadow sticky-top">
         <!-- NAVBAR -->
         <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
             <div class="container-fluid">
-            <a class="navbar-brand" href="#">Bootstrap Dashboard</a>
+            <a class="navbar-brand" href="./dashboard.html">Bootstrap Dashboard</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#dashboard">Dashboard</a>
+                    <a class="nav-link" href="./dashboard.html">Dashboard</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./sponsorship.html">Sponsorizzazione</a>
@@ -50,72 +50,143 @@
         <!-- /NAVBAR -->
     </header>
 
-<!-- CONTENITORE -->
-<div id="app" class="container-full">
-    <div class="d-flex row-cols-1 row-cols-md-2">
-        <!-- SIDEBAR -->
-        <!-- NAV SIDEBAR -->
-        <div class="sidebar col-md-3 col-lg-3 bg-dark d-none d-md-block">
-            <div class="p-3 pb-5">
-                <div class="content logo text-white border-bottom">
-                    <h3 class="fw-light p-1 pb-3">Boostrap Dashbord</h3>
-                </div>
-                <nav id="navbar-example3" class="h-100 bg-dark flex-column align-items-stretch border-0">
-                    <nav class="nav nav-pills flex-column">
-                        <a class="nav-link text-white mt-3" href="#dashboard">Dashboard</a>                       
-                        <a class="nav-link text-white" href="./sponsorship.html">Sponsorizzazione</a>
-                        <a class="nav-link text-white" href="./products.html">Prodotti</a>
-                        <a class="nav-link text-white active" href="./new-product.html">Nuovo Prodotto</a>
-                        <a class="nav-link text-white mb-5" href="#clienti">Clienti</a>                    
-                    </nav>
-                </nav>
-                <div class="d-flex align-item-center">
-                    <!-- IMMAGINE USER -->
-                <div class="w-25 h-25 rounded-circle overflow-hidden me-2 flex-grow-0">
-                    <img src="https://picsum.photos/id/237/100/100" alt="user" class="img-fluid">
-                </div>
-                <!-- /IMMAGINE USER -->                
-                <!-- DROPDOWN -->
-                <div class="btn-group">
-                    <button class="btn btn-dark btn-sm dropdown-toggle fw-semibold" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Mario Bianchi
-                    </button>
-                    <ul class="dropdown-menu bg-dark border border-light-subtle">
-                        <li class="text-white p-2 px-3 ">Impostazione</li>
-                        <li class="text-white p-2 px-3 ">Profilo</li>
-                        <li class="text-white p-2 px-3 border-top border-light-subtle">Esci</li>
+    <!-- CONTENITORE -->
+    <div id="app" class="container-full vh-100">
+        <div class="d-flex row-cols-1 row-cols-md-2">
+            <!-- SIDEBAR -->
+            <!-- NAV SIDEBAR -->
+            <div class="sidebar col-md-3 col-lg-3 bg-dark d-none d-md-block vh-100">
+                <div class="d-flex flex-column flex-shrink-0 p-3 bg-dark" data-bs-theme="dark">
+                    <a href="./dashboard.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <span class="fs-4">Bootstrap Dashboard</span>
+                    </a>
+                    <hr class="text-white">
+                    <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="./dashboard.html" class="nav-link link-body-emphasis">
+                        <i class="fas fa-house me-1"></i>
+                        Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sponsorship.html" class="nav-link link-body-emphasis">
+                        <i class="fas fa-chart-line me-1"></i>
+                        Sponsorizzazione
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./products.html" class="nav-link link-body-emphasis">
+                        <i class="fas fa-box-archive me-1"></i>
+                        Prodotti
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./new-product.html" class="nav-link active" aria-current="page">
+                        <i class="fas fa-plus me-1"></i>
+                        Nuovo Prodotto
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link link-body-emphasis">
+                        <i class="fas fa-user me-1"></i>
+                        Clienti
+                        </a>
+                    </li>
                     </ul>
-                </div>
-                <!-- /DROPDOWN -->
-                </div>
-            </div>         
-        </div>
-        <!-- /NAV SIDEBAR -->
-        <!-- /SIDEBAR -->
-        <!-- CONTENT -->
-        <div class="col col-md-9 col-lg-9">
-            <div class="content p-2">                
-                
-                
-
-
+                    <hr class="text-white">
+                    <div class="dropdown py-4">
+                    <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://picsum.photos/35/35/?person" alt="User" class="rounded-circle me-2">
+                        <strong>Armando Diaz</strong>
+                    </a>
+                    <ul class="dropdown-menu text-small shadow">
+                        <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Esci</a></li>
+                    </ul>
+                    </div>
+                </div>             
             </div>
-            
-        <!-- /CONTENT -->
+            <!-- /NAV SIDEBAR -->
+            <!-- /SIDEBAR -->
+            <!-- CONTENT -->
+            <div class="col col-md-9 col-lg-9 vh-100 overflow-y-auto">
+                <div class="content p-3">
+                    <!-- NUOVI PRODOTTI -->
+                    <div class="container py-2 bg-light">
+                        <header>
+                          <div class="pricing-header col-10  pb-md-4 mx-auto text-center">
+                            <h2 class="fw-normal text-body-emphasis mt-5">
+                                Crea un nuovo prodotto
+                            </h2>
+                            <p class="fs-5 text-body-secondary fs-6">
+                                I campi contrassegnati con un (*) sono obbligatori. 
+                                <br>
+                                Le immagini devono essere in formato PNG e non devono superare i 4 MB di dimensione. 
+                            </p>                   
+                         </div>
+                        </header> 
+                        <!-- ISERIMENTO NUOVI PRODOTTI -->
+                        <div class="row row-cols-1 row-gap-lg-2">
+                            <!-- INSERIRE PRODOTTO -->
+                            <div class="col col-lg-7">
+                                <!-- NOME PRODOTTO -->
+                                <div class="row mb-3">
+                                    <label for="nome" class="col-sm-4 col-form-label">Nome</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="nome" placeholder="col-form-label">
+                                    </div>
+                                </div> 
+                                <!-- /NOME PRODOTTO -->
+                                <!-- PREZZO PRODOTTO -->
+                                <div class="row mb-3">
+                                    <label for="prezzo" class="col-sm-4 col-form-label">Prezzo</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="prezzo" placeholder="col-form-label">
+                                    </div>
+                                </div> 
+                                <!-- /PREZZO PRODOTTO -->
+                                <!-- MARCA PRODOTTO -->
+                                <div class="row mb-3">
+                                    <label for="marca" class="col-sm-4 col-form-label">Marca</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control" id="marca">
+                                            <option value="#">--- seleziona ---</option>
+                                            <option value="apple"> apple </option>
+                                            <option value="samsung"> samsung </option>
+                                            <option value="nokia"> nokia </option>
+                                            <option value="lg"> lg </option>
+                                        </select>
+                                    </div>
+                                </div> 
+                                <!-- /MARCA PRODOTTO -->
+
+                            </div>
+                            <!-- /INSERIRE PRODOTTO -->
+
+                            <!-- CARATTERISTICHE PRODOTTO -->
+                            <div class="col col-lg-5">
+
+                            </div>
+                            <!-- /CARATTERISTICHE PRODOTTO -->
+
+                            
+                        </div>                       
+                        <!-- /ISERIMENTO NUOVI PRODOTTI -->
+
+
+                                                
+                      </div>                        
+                    <!-- /NUOVI PRODOTTI -->
+                </div>       
+            </div>
+            <!-- /CONTENT -->
 
         </div>
     </div>
+    <!-- /CONTENITORE -->
 
-
-    
-
-
-
-
-
-
-
-</div>
 
 
 

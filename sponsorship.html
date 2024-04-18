@@ -12,11 +12,11 @@
     <title>Sponsorizzazione</title>
 </head>
 <body>
-    <header class="container-full bg-dark d-md-none shadow">
+    <header class="container-full bg-dark d-md-none shadow sticky-top">
         <!-- NAVBAR -->
         <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
             <div class="container-fluid">
-            <a class="navbar-brand" href="#">Bootstrap Dashboard</a>
+            <a class="navbar-brand" href="./dashboard.html">Bootstrap Dashboard</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -51,13 +51,13 @@
     </header>
 
     <!-- CONTENITORE -->
-    <div id="app" class="container-full">
+    <div id="app" class="container-full vh-100">
         <div class="d-flex row-cols-1 row-cols-md-2">
             <!-- SIDEBAR -->
             <!-- NAV SIDEBAR -->
-            <div class="sidebar col-md-3 col-lg-3 bg-dark d-none d-md-block">
+            <div class="sidebar col-md-3 col-lg-3 bg-dark d-none d-md-block vh-100">
                 <div class="d-flex flex-column flex-shrink-0 p-3 bg-dark" data-bs-theme="dark">
-                    <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <a href="./dashboard.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                     <span class="fs-4">Bootstrap Dashboard</span>
                     </a>
                     <hr class="text-white">
@@ -111,7 +111,7 @@
             <!-- /NAV SIDEBAR -->
             <!-- /SIDEBAR -->
             <!-- CONTENT -->
-            <div class="col col-md-9 col-lg-9 vh-100">
+            <div class="col col-md-9 col-lg-9 vh-100 overflow-y-auto">
                 <div class="content p-5">
                     <!-- PREZZI -->
                     <div class="container py-2 bg-light">
@@ -122,10 +122,10 @@
                             <h5>Porta la tua esperienza a livello succesivo!</h5>
                             <!-- BOTTONI -->
                             <div class="d-inline-flex gap-2 mb-5 mt-4">
-                                <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button">
+                                <button class="d-inline-flex align-items-center btn btn-primary btn-md px-4 rounded-pill" type="button">
                                   Scopri di più
                                 </button>
-                                <button class="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="button">
+                                <button class="btn btn-outline-secondary btn-md px-4 rounded-pill" type="button">
                                   Contattaci
                                 </button>
                             </div>
@@ -173,7 +173,7 @@
                                     <h4 class="my-0 fw-normal">Enterprise</h4>
                                 </div>
                                 <div class="card-body">
-                                    <h1 class="card-title pricing-card-title">&euro; 29,90<small class="text-body-secondary fw-light">/mese</small></h1>
+                                    <h1 class="card-title pricing-card-title">&euro; 29<small class="text-body-secondary fw-light">/mese</small></h1>
                                     <ul class="list-unstyled mt-3 mb-4">
                                         <li>30 Utenti</li>
                                         <li>Spazio illimitato</li>
@@ -190,16 +190,9 @@
                 </div>       
             </div>
             <!-- /CONTENT -->
-
         </div>
     </div>
     <!-- /CONTENITORE -->
-
-
-
-
-    
-
 
     <!-- JS BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

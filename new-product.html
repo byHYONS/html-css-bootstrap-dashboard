@@ -114,10 +114,10 @@
             <div class="col col-md-9 col-lg-9 vh-100 overflow-y-auto">
                 <div class="content p-3">
                     <!-- NUOVI PRODOTTI -->
-                    <div class="container py-2 bg-light">
+                    <div class="container py-2">
                         <header>
                           <div class="pricing-header col-10  pb-md-4 mx-auto text-center">
-                            <h2 class="fw-normal text-body-emphasis mt-5">
+                            <h2 class="fw-normal text-body-emphasis mt-4">
                                 Crea un nuovo prodotto
                             </h2>
                             <p class="fs-5 text-body-secondary fs-6">
@@ -128,70 +128,129 @@
                          </div>
                         </header> 
                         <!-- ISERIMENTO NUOVI PRODOTTI -->
-                        <div class="row row-cols-1 row-gap-lg-2">
-                            <!-- INSERIRE PRODOTTO -->
-                            <div class="col col-lg-7">
-                                <!-- NOME PRODOTTO -->
-                                <div class="row mb-3">
-                                    <label for="nome" class="col-sm-4 col-form-label">Nome</label>
-                                    <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="nome" placeholder="col-form-label">
+                        <form action="#">
+                            <div class="row row-cols-1 order-lg-1 row-gap-lg-2">
+                                <!-- INSERIRE PRODOTTO -->
+                                <div class="col col-lg-7">
+                                    <!-- NOME PRODOTTO -->
+                                    <div class="row mb-3">
+                                        <label for="nome" class="col-sm-4 col-form-label">Nome</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="nome" placeholder="Inserisci nome modello">
+                                        </div>
+                                    </div> 
+                                    <!-- /NOME PRODOTTO -->
+                                    <!-- PREZZO PRODOTTO -->
+                                    <div class="row mb-3">
+                                        <label for="prezzo" class="col-sm-4 col-form-label">Prezzo</label>
+                                        <div class="col-sm-8">
+                                            <input type="number" class="form-control" id="prezzo" placeholder="Inserisci prezzo prodotto">
+                                        </div>
+                                    </div> 
+                                    <!-- /PREZZO PRODOTTO -->
+                                    <!-- MARCA PRODOTTO -->
+                                    <div class="row mb-3">
+                                        <label for="marca" class="col-sm-4 col-form-label">Marca</label>
+                                        <div class="col-sm-8">
+                                            <select class="form-control" id="marca">
+                                                <option value="#">--- seleziona la marca ---</option>
+                                                <option value="apple"> apple </option>
+                                                <option value="samsung"> samsung </option>
+                                                <option value="nokia"> nokia </option>
+                                                <option value="lg"> lg </option>
+                                            </select>
+                                        </div>
+                                    </div> 
+                                    <!-- /MARCA PRODOTTO -->
+                                    <!-- DESCRIZIONE PRODOTTO -->
+                                    <div class="row">                                    
+                                        <div class="col-sm-12">
+                                            <textarea name="descrizione" id="" class="form-control" cols="30" rows="5" placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri"></textarea>                                       
+                                        </div>
+                                    </div> 
+                                    <!-- /DESCRIZIONE PRODOTTO -->
+                                    <!-- CARICA LA FOTO -->
+                                    <div class="input-group mt-3">
+                                        <input type="file" class="form-control" id="scegli-img" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                        <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Immagine</button>
                                     </div>
-                                </div> 
-                                <!-- /NOME PRODOTTO -->
-                                <!-- PREZZO PRODOTTO -->
-                                <div class="row mb-3">
-                                    <label for="prezzo" class="col-sm-4 col-form-label">Prezzo</label>
-                                    <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="prezzo" placeholder="col-form-label">
+                                    <!-- /CARICA LA FOTO -->
+                                    <!-- SERIE DI BOTTONI -->
+                                    <div class="btn-toolbar justify-content-between mt-3" role="toolbar" aria-label="Toolbar with button groups">
+                                        <div class="btn-group" role="group" aria-label="First group">
+                                        <button type="button" class="btn btn-outline-secondary">Disponibile</button>
+                                        <button type="button" class="btn btn-outline-secondary">Esaurito</button>
+                                        <button type="button" class="btn btn-outline-secondary">Fuori produzione </button>
+                                        <button type="button" class="btn btn-outline-secondary">In arrivo</button>
+                                        </div>
                                     </div>
-                                </div> 
-                                <!-- /PREZZO PRODOTTO -->
-                                <!-- MARCA PRODOTTO -->
-                                <div class="row mb-3">
-                                    <label for="marca" class="col-sm-4 col-form-label">Marca</label>
-                                    <div class="col-sm-8">
-                                        <select class="form-control" id="marca">
-                                            <option value="#">--- seleziona ---</option>
-                                            <option value="apple"> apple </option>
-                                            <option value="samsung"> samsung </option>
-                                            <option value="nokia"> nokia </option>
-                                            <option value="lg"> lg </option>
-                                        </select>
+                                    <!-- /SERIE DI BOTTONI -->
+                                    <!-- BOTTONE SALVA -->
+                                    <div class="col order-lg-2">
+                                        <button type="button" class="btn btn-primary my-3">Salva</button>
                                     </div>
-                                </div> 
-                                <!-- /MARCA PRODOTTO -->
-
-                            </div>
-                            <!-- /INSERIRE PRODOTTO -->
-
-                            <!-- CARATTERISTICHE PRODOTTO -->
-                            <div class="col col-lg-5">
-
-                            </div>
-                            <!-- /CARATTERISTICHE PRODOTTO -->
-
-                            
-                        </div>                       
-                        <!-- /ISERIMENTO NUOVI PRODOTTI -->
-
-
-                                                
+                                    <!-- /BOTTONE SALVA --> 
+                                </div>
+                                <!-- /INSERIRE PRODOTTO -->
+                                <!-- CARATTERISTICHE PRODOTTO -->
+                                <div class="col col-lg-5 order-lg-3">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                            <label class="form-check-label" for="firstCheckbox">
+                                                Fotocamera digitale <br>
+                                                <small class="fw-lighter">foto alta qualit&agrave;, registrazionoe 8K</small>
+                                            </label>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                            <label class="form-check-label" for="firstCheckbox">
+                                                Fotocamera digitale <br>
+                                                <small class="fw-lighter">foto alta qualit&agrave;, registrazionoe 8K</small>
+                                            </label>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                            <label class="form-check-label" for="firstCheckbox">
+                                                Fotocamera digitale <br>
+                                                <small class="fw-lighter">foto alta qualit&agrave;, registrazionoe 8K</small>
+                                            </label>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                            <label class="form-check-label" for="firstCheckbox">
+                                                Fotocamera digitale <br>
+                                                <small class="fw-lighter">foto alta qualit&agrave;, registrazionoe 8K</small>
+                                            </label>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                            <label class="form-check-label" for="firstCheckbox">
+                                                Fotocamera digitale <br>
+                                                <small class="fw-lighter">foto alta qualit&agrave;, registrazionoe 8K</small>
+                                            </label>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                            <label class="form-check-label" for="firstCheckbox">
+                                                Fotocamera digitale <br>
+                                                <small class="fw-lighter">foto alta qualit&agrave;, registrazionoe 8K</small>
+                                            </label>
+                                        </li>                                   
+                                    </ul>
+                                </div>
+                                <!-- /CARATTERISTICHE PRODOTTO -->                          
+                            </div>                       
+                        </form>
+                        <!-- /ISERIMENTO NUOVI PRODOTTI -->                                                
                       </div>                        
                     <!-- /NUOVI PRODOTTI -->
                 </div>       
             </div>
             <!-- /CONTENT -->
-
         </div>
     </div>
     <!-- /CONTENITORE -->
-
-
-
-
-    
-
 
     <!-- JS BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

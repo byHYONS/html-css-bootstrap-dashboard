@@ -12,7 +12,7 @@
     <title>Sponsorizzazione</title>
 </head>
 <body>
-    <header class="container-full bg-dark d-md-none shadow sticky-top">
+    <header class="container-fluid bg-dark d-md-none shadow sticky-top">
         <!-- NAVBAR -->
         <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
             <div class="container-fluid">
@@ -55,7 +55,7 @@
         <div class="d-flex row-cols-1 row-cols-md-2">
             <!-- SIDEBAR -->
             <!-- NAV SIDEBAR -->
-            <div class="sidebar col-md-3 col-lg-3 bg-dark d-none d-md-block vh-100">
+            <div class="sidebar col-md-3 col-lg-3 bg-dark d-none d-md-block">
                 <div class="d-flex flex-column flex-shrink-0 p-3 bg-dark" data-bs-theme="dark">
                     <a href="./dashboard.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                     <span class="fs-4">Bootstrap Dashboard</span>
@@ -112,7 +112,7 @@
             <!-- /SIDEBAR -->
             <!-- CONTENT -->
             <div class="col col-md-9 col-lg-9 vh-100 overflow-y-auto">
-                <div class="content p-3">
+                <div class="content p-3 mt-4">
                     <!-- NUOVI PRODOTTI -->
                     <div class="container py-2">
                         <header>
@@ -165,7 +165,7 @@
                                     <!-- DESCRIZIONE PRODOTTO -->
                                     <div class="row">                                    
                                         <div class="col-sm-12">
-                                            <textarea name="descrizione" id="" class="form-control" cols="30" rows="5" placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri"></textarea>                                       
+                                            <textarea name="descrizione" id="descrizione" class="form-control" cols="30" rows="5" placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri"></textarea>                                       
                                         </div>
                                     </div> 
                                     <!-- /DESCRIZIONE PRODOTTO -->
@@ -176,7 +176,7 @@
                                     </div>
                                     <!-- /CARICA LA FOTO -->
                                     <!-- SERIE DI BOTTONI -->
-                                    <div class="btn-toolbar justify-content-between mt-3" role="toolbar" aria-label="Toolbar with button groups">
+                                    <div class="btn-toolbar justify-content-between my-3" role="toolbar" aria-label="Toolbar with button groups">
                                         <div class="btn-group" role="group" aria-label="First group">
                                         <button type="button" class="btn btn-outline-secondary">Disponibile</button>
                                         <button type="button" class="btn btn-outline-secondary">Esaurito</button>
@@ -184,55 +184,50 @@
                                         <button type="button" class="btn btn-outline-secondary">In arrivo</button>
                                         </div>
                                     </div>
-                                    <!-- /SERIE DI BOTTONI -->
-                                    <!-- BOTTONE SALVA -->
-                                    <div class="col order-lg-2">
-                                        <button type="button" class="btn btn-primary my-3">Salva</button>
-                                    </div>
-                                    <!-- /BOTTONE SALVA --> 
+                                    <!-- /SERIE DI BOTTONI --> 
                                 </div>
                                 <!-- /INSERIRE PRODOTTO -->
                                 <!-- CARATTERISTICHE PRODOTTO -->
                                 <div class="col col-lg-5 order-lg-3">
                                     <ul class="list-group">
                                         <li class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                                            <label class="form-check-label" for="firstCheckbox">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="caratteristica-1">
+                                            <label class="form-check-label" for="caratteristica-1">
                                                 Fotocamera digitale <br>
                                                 <small class="fw-lighter">foto alta qualit&agrave;, registrazionoe 8K</small>
                                             </label>
                                         </li>
                                         <li class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                                            <label class="form-check-label" for="firstCheckbox">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="caratteristica-2">
+                                            <label class="form-check-label" for="caratteristica-2">
                                                 Fotocamera digitale <br>
                                                 <small class="fw-lighter">foto alta qualit&agrave;, registrazionoe 8K</small>
                                             </label>
                                         </li>
                                         <li class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                                            <label class="form-check-label" for="firstCheckbox">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="caratteristica-3">
+                                            <label class="form-check-label" for="caratteristica-3">
                                                 Fotocamera digitale <br>
                                                 <small class="fw-lighter">foto alta qualit&agrave;, registrazionoe 8K</small>
                                             </label>
                                         </li>
                                         <li class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                                            <label class="form-check-label" for="firstCheckbox">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="caratteristica-4">
+                                            <label class="form-check-label" for="caratteristica-4">
                                                 Fotocamera digitale <br>
                                                 <small class="fw-lighter">foto alta qualit&agrave;, registrazionoe 8K</small>
                                             </label>
                                         </li>
                                         <li class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                                            <label class="form-check-label" for="firstCheckbox">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="caratteristica-5">
+                                            <label class="form-check-label" for="caratteristica-5">
                                                 Fotocamera digitale <br>
                                                 <small class="fw-lighter">foto alta qualit&agrave;, registrazionoe 8K</small>
                                             </label>
                                         </li>
                                         <li class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                                            <label class="form-check-label" for="firstCheckbox">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="caratteristica-5">
+                                            <label class="form-check-label" for="caratteristica-5">
                                                 Fotocamera digitale <br>
                                                 <small class="fw-lighter">foto alta qualit&agrave;, registrazionoe 8K</small>
                                             </label>
@@ -240,7 +235,12 @@
                                     </ul>
                                 </div>
                                 <!-- /CARATTERISTICHE PRODOTTO -->                          
-                            </div>                       
+                            </div>
+                            <!-- BOTTONE SALVA -->
+                            <div class="col order-lg-2">
+                                <button type="button" class="btn btn-primary my-3">Salva</button>
+                            </div>
+                            <!-- /BOTTONE SALVA -->                       
                         </form>
                         <!-- /ISERIMENTO NUOVI PRODOTTI -->                                                
                       </div>                        
